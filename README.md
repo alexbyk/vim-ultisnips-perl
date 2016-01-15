@@ -2,12 +2,15 @@
 Vim  UltiSnips snippets for perl
 
 ## Templates
-* `comp` - Evo component
-* `compw` - Evo component with some role
-* `role` - Evo role
+* `module` - Evo module package
+* `comp` - Evo component package
+* `compw` - Evo component package with some role
+* `rolep` - Evo role package
 * `test` - Test file
 
-## Other
+## Snips
+* `meth` - Role method
+* `expo` - Exported function
 * `for` - foreach loop
 
 ## Installation

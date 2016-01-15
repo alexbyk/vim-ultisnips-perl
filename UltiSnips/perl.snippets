@@ -1,14 +1,28 @@
 global !p
 fn_base = fn.split(os.extsep)[0];
-lower_first = lambda s: s[:1].lower() + s[1:] if s else ''
+lc_base = fn.split(os.extsep)[0].lower()
 endglobal
 
+snippet module "Evo module package"
+package ${1:My}::`!p snip.rv = fn_base` ;
+use Evo '-Export *';
+
+${0}
+
+1;
+endsnippet
+
+snippet expo "Evo exported function"
+sub `!p snip.rv = lc_base`_${1:func}${2:($arg)} : Export {
+	${0}
+}
+endsnippet
 
 snippet comp "Evo component"
 package ${1:My}::`!p snip.rv = fn_base` ;
 use Evo '-Comp *';
 
-${2}
+${0}
 
 1;
 endsnippet
@@ -19,32 +33,36 @@ use Evo '-Comp *';
 
 with ':${2:MyRole}';
 
-${3}
+${0}
 
 1;
 endsnippet
 
-snippet role "Evo role"
+snippet rolep "Evo role package"
 package ${1:My}::`!p snip.rv = fn_base` ;
 use Evo '-Role *';
 
-sub foo($self) : Role {
-	${2}
-}
+$0
 
 1;
 endsnippet
 
-snippet test "Test"
+snippet meth "Evo role method"
+sub `!p snip.rv = lc_base`_${1:meth}${2:($self)} : Role {
+	${0}
+}
+endsnippet
+
+snippet test "Test template"
 use Evo 'Test::More; ${1} ';
 
-${2}
+${0}
 
 done_testing;
 endsnippet
 
 snippet for "foreach loop"
 foreach my $${3:cur} (@${1:list}) {
-	${2}
+	${0}
 }
 endsnippet
