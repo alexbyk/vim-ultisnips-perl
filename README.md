@@ -11,6 +11,7 @@ Vim  UltiSnips snippets for perl
 * `test` - Test file
 
 ## Snips
+* `use` - use Evo + import list
 * `meth` - Role method
 * `expo` - Exported function
 * `for` - foreach loop
