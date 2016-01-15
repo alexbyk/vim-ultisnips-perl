@@ -2,3 +2,49 @@ global !p
 fn_base = fn.split(os.extsep)[0];
 lower_first = lambda s: s[:1].lower() + s[1:] if s else ''
 endglobal
+
+
+snippet comp "Evo component"
+package ${1:My}::`!p snip.rv = fn_base` ;
+use Evo '-Comp *';
+
+${2}
+
+1;
+endsnippet
+
+snippet compw "Evo component with a role"
+package ${1:My}::`!p snip.rv = fn_base` ;
+use Evo '-Comp *';
+
+with ':${2:MyRole}';
+
+${3}
+
+1;
+endsnippet
+
+snippet role "Evo role"
+package ${1:My}::`!p snip.rv = fn_base` ;
+use Evo '-Role *';
+
+sub foo($self) : Role {
+	${2}
+}
+
+1;
+endsnippet
+
+snippet test "Test"
+use Evo 'Test::More; ${1} ';
+
+${2}
+
+done_testing;
+endsnippet
+
+snippet for "foreach loop"
+foreach my $${3:cur} (@${1:list}) {
+	${2}
+}
+endsnippet
