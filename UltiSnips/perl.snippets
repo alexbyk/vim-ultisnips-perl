@@ -13,7 +13,7 @@ ${0}
 endsnippet
 
 snippet expo "Evo exported function"
-sub `!p snip.rv = lc_base`_${1:func}${2:($arg)} : Export {
+sub `!p snip.rv = lc_base`_${1:func}(${2:$arg}) : Export {
 	${0}
 }
 endsnippet
@@ -48,7 +48,7 @@ $0
 endsnippet
 
 snippet meth "Evo role method"
-sub `!p snip.rv = lc_base`_${1:meth}${2:($self)} : Role {
+sub `!p snip.rv = lc_base`_${1:meth}(${2:$self}) : Role {
 	${0}
 }
 endsnippet
