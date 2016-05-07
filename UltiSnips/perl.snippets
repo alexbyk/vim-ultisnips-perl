@@ -18,7 +18,7 @@ sub `!p snip.rv = lc_base`_${1:func}(${2:$arg}) : Export {
 }
 endsnippet
 
-snippet comp "Evo component"
+snippet class "Evo class"
 package ${1:My}::`!p snip.rv = fn_base`;
 use Evo '-Comp *';
 
@@ -27,7 +27,7 @@ ${0}
 1;
 endsnippet
 
-snippet compw "Evo component with a role"
+snippet classw "Evo class with a role"
 package ${1:My}::`!p snip.rv = fn_base`;
 use Evo '-Comp *';
 

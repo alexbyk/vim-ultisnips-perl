@@ -5,8 +5,8 @@ Vim  UltiSnips snippets for perl
 
 ## Templates
 * `module` - Evo module package
-* `comp` - Evo component package
-* `compw` - Evo component package with some role
+* `class` - Evo class package
+* `classw` - Evo class package with some role
 * `rolep` - Evo role package
 * `test` - Test file
 
