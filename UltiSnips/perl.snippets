@@ -3,7 +3,7 @@ fn_base = fn.split(os.extsep)[0];
 lc_base = fn.split(os.extsep)[0].lower()
 endglobal
 
-snippet module "Evo module package"
+snippet package "Evo package"
 package ${1:My}::`!p snip.rv = fn_base` ;
 use Evo '-Export *';
 
@@ -20,7 +20,7 @@ endsnippet
 
 snippet class "Evo class"
 package ${1:My}::`!p snip.rv = fn_base`;
-use Evo '-Comp *';
+use Evo '-Class *';
 
 ${0}
 
@@ -29,7 +29,7 @@ endsnippet
 
 snippet classw "Evo class with a role"
 package ${1:My}::`!p snip.rv = fn_base`;
-use Evo '-Comp *';
+use Evo '-Class *';
 
 with ':${2:MyRole}';
 

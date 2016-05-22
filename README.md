@@ -4,7 +4,7 @@ Vim  UltiSnips snippets for perl
 ![GIF Demo](https://raw.github.com/alexbyk/vim-ultisnips-perl/master/demo.gif)
 
 ## Templates
-* `module` - Evo module package
+* `package` - Evo package
 * `class` - Evo class package
 * `classw` - Evo class package with some role
 * `rolep` - Evo role package
