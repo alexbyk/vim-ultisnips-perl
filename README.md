@@ -6,13 +6,12 @@ Vim  UltiSnips snippets for perl
 ## Templates
 * `package` - Evo package
 * `class` - Evo class package
-* `classw` - Evo class package with some role
-* `rolep` - Evo role package
+* `role` - Evo role package
 * `test` - Test file
 
 ## Snips
 * `use` - use Evo + import list
-* `meth` - Role method
+* `pub` - public method with `:Public` attribute
 * `expo` - Exported function
 * `for` - foreach loop
 

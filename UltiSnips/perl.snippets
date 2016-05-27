@@ -27,28 +27,17 @@ ${0}
 1;
 endsnippet
 
-snippet classw "Evo class with a role"
+snippet role "Evo role package"
 package ${1:My}::`!p snip.rv = fn_base`;
-use Evo '-Class *';
-
-with ':${2:MyRole}';
-
-${0}
-
-1;
-endsnippet
-
-snippet rolep "Evo role package"
-package ${1:My}::`!p snip.rv = fn_base` ;
-use Evo '-Role *';
+use Evo -Class::Role;
 
 $0
 
 1;
 endsnippet
 
-snippet meth "Evo role method"
-sub `!p snip.rv = lc_base`_${1:meth}(${2:$self}) : Role {
+snippet pub "Evo public method"
+sub ${1:`!p snip.rv = lc_base`_meth} ($self$2) : Public {
 	${0}
 }
 endsnippet
