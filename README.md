@@ -1,8 +1,6 @@
 # vim-ultisnips-perl
 Vim  UltiSnips snippets for perl
 
-![GIF Demo](https://raw.github.com/alexbyk/vim-ultisnips-perl/master/demo.gif)
-
 ## Templates
 * `package` - Evo package
 * `class` - Evo class package
