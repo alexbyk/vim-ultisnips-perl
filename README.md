@@ -9,7 +9,6 @@ Vim  UltiSnips snippets for perl
 
 ## Snips
 * `use` - use Evo + import list
-* `pub` - public method with `:Public` attribute
 * `expo` - Exported function
 * `for` - foreach loop
 
