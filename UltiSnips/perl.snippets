@@ -27,15 +27,6 @@ ${0}
 1;
 endsnippet
 
-snippet role "Evo role package"
-package ${1:My}::`!p snip.rv = fn_base`;
-use Evo -Class::Role;
-
-$0
-
-1;
-endsnippet
-
 snippet test "Test template"
 use Evo 'Test::More; ${1}';
 
@@ -50,6 +41,6 @@ foreach my $${3:cur} (@${1:list}) {
 }
 endsnippet
 
-snippet use "foreach loop"
+snippet use "use Evo and other module"
 use Evo '${0} *';
 endsnippet

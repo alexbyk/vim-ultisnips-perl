@@ -4,7 +4,6 @@ Vim  UltiSnips snippets for perl
 ## Templates
 * `package` - Evo package
 * `class` - Evo class package
-* `role` - Evo role package
 * `test` - Test file
 
 ## Snips
