@@ -1,11 +1,11 @@
 global !p
 fn_base = fn.split(os.extsep)[0];
-lc_base = fn.split(os.extsep)[0].lower()
+#lc_base = fn.split(os.extsep)[0].lower()
 endglobal
 
 snippet package "Evo package"
 package ${1:My}::`!p snip.rv = fn_base`;
-use Evo '-Export *';
+use Evo -Export;
 
 ${0}
 
@@ -13,7 +13,7 @@ ${0}
 endsnippet
 
 snippet expo "Evo exported function"
-sub `!p snip.rv = lc_base`_${1:func}(${2:$arg}) : Export {
+sub ${1:func}(${2:$arg}) : Export {
 	${0}
 }
 endsnippet
